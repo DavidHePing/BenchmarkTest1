@@ -1,0 +1,14 @@
+normal test
+    go test -v -bench .
+specific test
+    go test -bench='Generate' .
+cpu
+    go test -v -bench . -cpu=1
+spend time
+    go test -v -bench . -benchtime=5s
+test times
+    go test -v -bench . -benchtime=50x
+benchmark execute times
+    go test -v -bench . -count=3
+memory
+    go test -v -bench . -benchmem
